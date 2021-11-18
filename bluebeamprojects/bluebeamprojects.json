@@ -1,0 +1,7 @@
+{
+  "layout": "layouts/project.njk",
+  "permalink": "bluebeam-projects/{{ title | slug }}/index.html",
+  "tags": [
+    "bluebeamproject"
+  ]
+}
