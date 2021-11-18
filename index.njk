@@ -7,7 +7,7 @@ section: home
 
   <div class="hero">
     <div class="hero__col">
-      <h1 class="hero__title gradient-text">Suck It</h1>
+      <h1 class="hero__title gradient-text">{{ home.title }}</h1>
       {% if home.subtitle %}
         <h2 class="hero__subtitle">{{ home.subtitle }}</h2>
       {% endif %}
@@ -23,11 +23,18 @@ section: home
     </div>
   </div>
 
-  <hr>
+  <hr id="about">
+  <h2 class="gradient-text">About</h2>
+  <p>With over 9 years of front end development experience, I've worked on hundreds of projects ranging from small mom-and-pop shops to large hospitals and everything else in between.</p>
+  <p>I've worked at multiple marketing agencies where I have been the sole developer on all web-related projects. I have also been part of larger teams which allowed me the opportunity to collaborate and pick the brains of senior developers. The experiences I've gained throughout my career have allowed me to adapt to any situation with a can-do attitude while always keeping the ultimate goal in mind.</p>
+
+  <hr id="projects">
   <h2>Projects</h2>
+  {% set bluebeamprojectlist = collections.bluebeamproject %}
+  {% include "components/bluebeamprojectlist.njk" %}
+
   {% set projectlist = collections.project %}
   {% include "components/projectlist.njk" %}
-
 
   <hr>
   <h2>Articles</h2>

@@ -5,6 +5,10 @@
   justify-content: space-between;
   padding: 15px;
   border-top: 3px solid var(--color-secondary);
+  /*position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;*/
 }
 
 @media (min-width: 1024px) {

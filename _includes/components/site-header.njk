@@ -8,12 +8,14 @@
         width="25px"
         height="25px"
         loading="lazy">
-      {{ metadata.title }}
+      Sergeh Farhadnejad
     </a>
   </span>
   <nav class="site-header__nav">
     {% set navPages = collections.all | eleventyNavigation %}
     <ul class="site-header__items">
+        <li class="site-header__item"><a class="site-header__link" href="{% if page.url != '/' %}/{% endif %}#about">About</a></li>
+        <li class="site-header__item"><a class="site-header__link" href="{% if page.url != '/' %}/{% endif %}#projects">Projects</a></li>
     {%- for entry in navPages %}
       <li class="site-header__item">
         <a class="site-header__link" href="{{ entry.url | url }}"{% if entry.url == page.url %} data-current="current item"{% endif %}>{{ entry.title }}</a>
