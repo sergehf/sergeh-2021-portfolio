@@ -16,7 +16,8 @@ body {
   font-size: 1.8rem;
   line-height: 1.618;
   color: var(--color-text);
-  background-color: var(--color-bg);
+  background-color: #f4f9fc;
+  padding: 20px;
 }
 
 main {
@@ -217,9 +218,9 @@ label, legend {
 }
 
 .work-box {
-  background: #f7f7f7;
+  /*background: #f7f7f7;
   padding: 20px;
-  box-shadow: 1px 1px 5px 2px #e5e5e5;
+  box-shadow: 1px 1px 5px 2px #e5e5e5;*/
   margin-bottom: 30px;
   margin-top: 50px;
 }
@@ -236,4 +237,31 @@ label, legend {
 
 .form-field input {
   width: 100%;
+}
+
+.page-anchor {
+  padding: 20px 0;
+}
+
+.project-card-content a {
+  display: inline-block;
+  border: 2px solid #f4f9fc;
+  border-bottom: 2px solid #2f5bc2;
+  border-radius: 3px;
+  padding: 5px 20px;
+  transition: all 0.2s linear;
+}
+
+.project-card-content:hover a {
+  border: 2px solid #2f5bc2;
+  background: #2f5bc2;
+  color: #fff;
+}
+
+input, select, textarea {
+  background: #fff;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #2f5bc2;
 }
