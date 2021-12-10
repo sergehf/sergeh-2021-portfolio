@@ -1,0 +1,7 @@
+{
+  "layout": "layouts/project.njk",
+  "permalink": "caspian-projects/{{ title | slug }}/index.html",
+  "tags": [
+    "caspianproject"
+  ]
+}

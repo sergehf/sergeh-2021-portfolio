@@ -25,21 +25,48 @@ section: home
 
   <hr id="about">
   <h2 class="gradient-text">About</h2>
-  <p>With over 9 years of front end development experience, I've worked on hundreds of projects ranging from small mom-and-pop shops to large hospitals and everything else in between.</p>
+  <p>Over the last 9 years, I've worked on hundreds of projects ranging from small mom-and-pop shops to large hospitals and everything else in between.</p>
   <p>I've worked at multiple marketing agencies where I have been the sole developer on all web-related projects. I have also been part of larger teams which allowed me the opportunity to collaborate and pick the brains of senior developers. The experiences I've gained throughout my career have allowed me to adapt to any situation with a can-do attitude while always keeping the ultimate goal in mind.</p>
 
-  <hr id="projects">
-  <h2>Projects</h2>
-  {% set bluebeamprojectlist = collections.bluebeamproject %}
-  {% include "components/bluebeamprojectlist.njk" %}
+  <hr id="work">
+  <h2 class="gradient-text">Work</h2>
 
-  {% set projectlist = collections.project %}
-  {% include "components/projectlist.njk" %}
+  <div class="work-box">
+    <h3>Bluebeam, Inc.</h3>
+    <h4>2019 - Present</h4>
+    <p>I am a Web Developer on the Web Dev team in the Marketing department. I was brought in to be the primary developer working with our International team as we move towards becoming a more global company. Working alongside our localization team, I have helped create processes that have allowed us to become very efficient in getting content translated and uploaded to our sites.</p>
+    <p>Aside from working on localization, I am also involved in the ongoing maintenance and improvement of all the company sites. These sites include the main bluebeam.com, the blog (<a href="http://blog.bluebeam.com/">Built</a>), the annual conference site (<a href="https://www.bluebeamextreme.com/">XCON</a>) and a number of other internal sites.</p>
+    
+    <h5>Projects:</h5>
+    {% set bluebeamprojectlist = collections.bluebeamproject %}
+    {% include "components/bluebeamprojectlist.njk" %}
+  </div>
 
-  <hr>
-  <h2>Articles</h2>
-  {% set postslist = collections.post %}
-  {% set show_postslist_tags = false %}
-  {% set limit = 3 %}
-  {% include "components/postslist.njk" %}
+  <div class="work-box">
+    <h3>Mojenta</h3>
+    <h4>Freelance: 2020 - Present</h4>
+    <h4>Full Time: 2019</h4>
+    <p>Mojenta is a full-service marketing agency serving the B2B telecom, IT, and cloud services industries. I am involved in most of their web-based projects which includes full site builds, landing pages, and html emails.</p>
+    <p>I originally started freelancing for them until they decided to hire me full time as their in-house developer. Once I left for Bluebeam, they decided to continue working with me as a freelancer again.</p>
+    
+    <h5>Projects:</h5>
+    {% set projectlist = collections.project %}
+    {% include "components/projectlist.njk" %}
+  </div>
+
+  <div class="work-box">
+    <h3>Caspian Services, Inc.</h3>
+    <h4>2012 - 2019</h4>
+    <p>Caspian Services is a marketing agency mainly serving SMBs in various industries. I was responsible for building sites, maintaining existing sites, and customer service (processing payments, signing people up for new services, etc).</p>
+    
+    <h5>Projects:</h5>
+    {% set caspianprojectlist = collections.caspianproject %}
+    {% include "components/caspianprojectlist.njk" %}
+  </div>
+  
+
+  <hr id="contact">
+  <h2 class="gradient-text">Contact</h2>
+  <p>You can contact me below or find me on <a href="https://www.linkedin.com/in/sergehf/">LinkedIn</a>.</p>
+  {% include "components/form.njk" %}
 </div>

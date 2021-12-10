@@ -57,10 +57,14 @@ h2 {
   font-size: 2.00em; }
 
 h3 {
-  font-size: 1.75em; }
+  font-size: 1.75em;
+  margin-top: 0;
+ }
 
 h4 {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  margin-top: 0;
+ }
 
 h5 {
   font-size: 1.25em; }
@@ -202,7 +206,34 @@ textarea, select, input {
 input[type="checkbox"]:focus {
   outline: 1px dotted var(--color-primary); }
 
-label, legend, fieldset {
+label, legend {
   display: block;
   margin-bottom: .5rem;
   font-weight: 600; }
+
+
+.work-box h4 {
+  font-size: 1em;
+}
+
+.work-box {
+  background: #f7f7f7;
+  padding: 20px;
+  box-shadow: 1px 1px 5px 2px #e5e5e5;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-field {
+  width: 48%;
+}
+
+.form-field input {
+  width: 100%;
+}

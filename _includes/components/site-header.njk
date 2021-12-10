@@ -1,13 +1,13 @@
 <header class="site-header">
   <span class="site-header__logo-container">
     <a class="site-header__link" href="{{ '/' | url }}">
-      <img
+      {# <img
         class="site-header__logo"
         src="/static/img/logo.png"
         alt="Fernfolio Logo"
         width="25px"
         height="25px"
-        loading="lazy">
+        loading="lazy"> #}
       Sergeh Farhadnejad
     </a>
   </span>
@@ -15,12 +15,13 @@
     {% set navPages = collections.all | eleventyNavigation %}
     <ul class="site-header__items">
         <li class="site-header__item"><a class="site-header__link" href="{% if page.url != '/' %}/{% endif %}#about">About</a></li>
-        <li class="site-header__item"><a class="site-header__link" href="{% if page.url != '/' %}/{% endif %}#projects">Projects</a></li>
-    {%- for entry in navPages %}
+        <li class="site-header__item"><a class="site-header__link" href="{% if page.url != '/' %}/{% endif %}#work">Work</a></li>
+        <li class="site-header__item"><a class="site-header__link" href="{% if page.url != '/' %}/{% endif %}#contact">Contact</a></li>
+    {# {%- for entry in navPages %}
       <li class="site-header__item">
         <a class="site-header__link" href="{{ entry.url | url }}"{% if entry.url == page.url %} data-current="current item"{% endif %}>{{ entry.title }}</a>
       </li>
-    {%- endfor %}
+    {%- endfor %} #}
     </ul>
   </nav>
 </header>
